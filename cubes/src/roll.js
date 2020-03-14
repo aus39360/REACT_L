@@ -14,14 +14,10 @@ class Roll extends Component {
         const rand1 = this.props.sides[ Math.floor(Math.random() * this.props.sides.length)];
         const rand2 = this.props.sides[ Math.floor(Math.random() * this.props.sides.length)];
 
-        this.setState ({ rolling: true});
+        this.setState ({rolling: true});
 
         setTimeout(() => {
-            this.setState({number1: rand1, number2: rand2})
-        }, 200)
-
-        setTimeout(() => {
-            this.setState({rolling: false})
+            this.setState({number1: rand1, number2: rand2, rolling: false})
         }, 1000)
     }
     render() {

@@ -4,6 +4,15 @@
     font-size: 100px;
     margin: 30px;
 }
+
+.loader {
+    background-color: slateblue;
+    width: 87.5px;
+    height: 87.5px;
+    border-radius: 10px;
+    display: none;
+}
+
 .shaking {
     animation-name: wobble;
     animation-duration: 1s;
@@ -32,3 +41,4 @@
         transform: translate3d(0, 0, 0);
     }
 }
+
