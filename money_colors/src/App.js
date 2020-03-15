@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import Kill from './kill'
-import Icon from './iconList.js'
+import Money from './money.js'
 
 function App() {
   return (
     <div className="App">
-      <Kill />
-      <Icon />
+      <Money />
     </div>
   );
 }
