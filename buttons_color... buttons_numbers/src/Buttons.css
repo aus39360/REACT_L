@@ -1,0 +1,10 @@
+.buttonList {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buton {
+    margin: 50px;
+    padding: 12px 30px;
+    border: none;
+}
