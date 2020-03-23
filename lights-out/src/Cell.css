@@ -1,6 +1,7 @@
 .Cell {
   height: 100px;
   width: 100px;
+  border-radius: 2px;
   background-color: #0c2461;
   transition: background-color 0.9s ease;
 }
