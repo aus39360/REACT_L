@@ -5,8 +5,13 @@ import BoxForm from './BoxForm.js';
 class BoxList extends Component{
     constructor(props){
         super(props);
-        this.state = { boxes: [{ width: 100, height: 400, color:'orange'}]}
+        this.state = { boxes: []}
         this.create = this.create.bind(this);
+    }
+    remove(id) {
+        this.setState({
+            boxes: this.state.boxes.filter(box => box.id !== id)
+        })
     }
     create(newBox) {
         this.setState({
@@ -16,9 +21,12 @@ class BoxList extends Component{
     render() {
         const boxes = this.state.boxes.map(box => (
             <Box 
+                key={box.id}
+                id={box.id}
                 width={box.width}
                 height={box.height}
                 color={box.color}
+                removeBox={() => this.remove(box.id)}
             />
         )) 
         return(
