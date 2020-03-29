@@ -19,7 +19,7 @@ class Quotes extends Component {
             <div>
                 {this.state.loader ? 
                 (<div>
-                    <h1>quotes...</h1>
+                    <h1>z</h1>
                     {this.state.quote}
                 </div>)
                 :
